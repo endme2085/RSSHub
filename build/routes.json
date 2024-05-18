@@ -50756,14 +50756,42 @@
   },
   "shisu": {
     "routes": {
-      "/news/:category": {
-        "path": "/news/:category",
+      "/en/features": {
+        "path": "/en/features",
         "categories": [
           "university"
         ],
-        "example": "/shisu/news/notice",
+        "example": "/shisu/en/features",
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "en.shisu.edu.cn/resources/features/"
+            ]
+          }
+        ],
+        "name": "FEATURED STORIES",
+        "maintainers": [
+          "Duuckjing"
+        ],
+        "description": "Read a series of in-depth stories about SISU faculty, students, alumni and beyond campus.",
+        "location": "en.ts"
+      },
+      "/news/:section": {
+        "path": "/news/:section",
+        "categories": [
+          "university"
+        ],
+        "example": "/shisu/news/news",
         "parameters": {
-          "category": "新闻的分类可根据自己的需要选择，首页为全部新闻"
+          "section": "主站的新闻类别"
         },
         "features": {
           "requireConfig": false,
@@ -50776,7 +50804,7 @@
         "radar": [
           {
             "source": [
-              "news.shisu.edu.cn/:category/index.html"
+              "news.shisu.edu.cn/:section/index.html"
             ]
           }
         ],
@@ -50784,12 +50812,12 @@
         "maintainers": [
           "Duuckjing"
         ],
-        "description": "| 首页 | 特稿    | 学术      | 教学       | 国际          | 校园   | 人物   | 视讯       | 公告   |\n  | ---- | ------- | --------- | ---------- | ------------- | ------ | ------ | ---------- | ------ |\n  | news | gazette | research- | academics- | international | campus | people | multimedia | notice |",
+        "description": "| 首页 | 特稿    | 学术      | 教学       | 国际          | 校园   | 人物   | 视讯       | 公告   |\n    | ---- | ------- | --------- | ---------- | ------------- | ------ | ------ | ---------- | ------ |\n    | news | gazette | research- | academics- | international | campus | people | multimedia | notice |",
         "location": "news.ts"
       }
     },
     "name": "上海外国语大学",
-    "url": "news.shisu.edu.cn"
+    "url": "shisu.edu.cn"
   },
   "shmeea": {
     "routes": {
