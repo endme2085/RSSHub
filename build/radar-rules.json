@@ -14108,12 +14108,12 @@
     "_name": "上海外国语大学",
     "en": [
       {
-        "title": "FEATURED STORIES",
+        "title": "SISU TODAY | FEATURED STORIES",
         "docs": "https://docs.rsshub.app/routes/university",
         "source": [
-          "/resources/features/"
+          "/resources/:section/"
         ],
-        "target": "/shisu/en/features"
+        "target": "/shisu/en/:section"
       }
     ],
     "news": [

@@ -50756,12 +50756,15 @@
   },
   "shisu": {
     "routes": {
-      "/en/features": {
-        "path": "/en/features",
+      "/en/:section": {
+        "path": "/en/:section",
         "categories": [
           "university"
         ],
-        "example": "/shisu/en/features",
+        "example": "/shisu/en/news",
+        "parameters": {
+          "section": "The name of resources"
+        },
         "features": {
           "requireConfig": false,
           "requirePuppeteer": false,
@@ -50773,15 +50776,16 @@
         "radar": [
           {
             "source": [
-              "en.shisu.edu.cn/resources/features/"
-            ]
+              "en.shisu.edu.cn/resources/:section/"
+            ],
+            "target": "/en/:section"
           }
         ],
-        "name": "FEATURED STORIES",
+        "name": "SISU TODAY | FEATURED STORIES",
         "maintainers": [
           "Duuckjing"
         ],
-        "description": "Read a series of in-depth stories about SISU faculty, students, alumni and beyond campus.",
+        "description": "- features: Read a series of in-depth stories about SISU faculty, students, alumni and beyond campus.\n    - news: SISU TODAY English site.",
         "location": "en.ts"
       },
       "/news/:section": {
@@ -50805,7 +50809,8 @@
           {
             "source": [
               "news.shisu.edu.cn/:section/index.html"
-            ]
+            ],
+            "target": "/news/:section"
           }
         ],
         "name": "上外新闻",
