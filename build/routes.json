@@ -50830,14 +50830,6 @@
         "parameters": {
           "section": "The name of resources"
         },
-        "features": {
-          "requireConfig": false,
-          "requirePuppeteer": false,
-          "antiCrawler": false,
-          "supportBT": false,
-          "supportPodcast": false,
-          "supportScihub": false
-        },
         "radar": [
           {
             "source": [
@@ -50850,7 +50842,7 @@
         "maintainers": [
           "Duuckjing"
         ],
-        "description": "- features: Read a series of in-depth stories about SISU faculty, students, alumni and beyond campus.\n    - news: SISU TODAY English site.",
+        "description": "- features: Read a series of in-depth stories about SISU faculty, students, alumni and beyond campus.\n  - news: SISU TODAY English site.",
         "location": "en.ts"
       },
       "/news/:section": {
@@ -50882,7 +50874,7 @@
         "maintainers": [
           "Duuckjing"
         ],
-        "description": "| 首页 | 特稿    | 学术      | 教学       | 国际          | 校园   | 人物   | 视讯       | 公告   |\n    | ---- | ------- | --------- | ---------- | ------------- | ------ | ------ | ---------- | ------ |\n    | news | gazette | research- | academics- | international | campus | people | multimedia | notice |",
+        "description": "| 首页 | 特稿    | 学术      | 教学       | 国际          | 校园   | 人物   | 视讯       | 公告   |\n  | ---- | ------- | --------- | ---------- | ------------- | ------ | ------ | ---------- | ------ |\n  | news | gazette | research- | academics- | international | campus | people | multimedia | notice |",
         "location": "news.ts"
       }
     },
